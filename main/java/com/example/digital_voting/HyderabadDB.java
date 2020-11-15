@@ -53,6 +53,24 @@ public class HyderabadDB extends AppCompatActivity {
                 openFingerprintauth();
             }
         });
+        hyd_people_vote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFingerprintauth();
+            }
+        });
+        hyd_dev_vote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFingerprintauth();
+            }
+        });
+        hyd_farmer_vote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFingerprintauth();
+            }
+        });
 
 
     }
@@ -76,6 +94,5 @@ public class HyderabadDB extends AppCompatActivity {
         Intent i=new Intent(this,fingerprintauth.class);
         startActivity(i);
     }
-
 
 }

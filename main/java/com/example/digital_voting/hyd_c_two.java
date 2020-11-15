@@ -23,7 +23,8 @@ public class hyd_c_two extends AppCompatActivity {
         });
     }
     public void backtohydDB(){
-        Intent i= new Intent(this,HyderabadDB.class);
-        startActivity(i);
+        finish();
+        //Intent i= new Intent(this,HyderabadDB.class);
+        //startActivity(i);
     }
 }

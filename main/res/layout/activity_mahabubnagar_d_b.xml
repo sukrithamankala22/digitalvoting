@@ -161,7 +161,7 @@
         app:layout_constraintVertical_bias="0.569" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/mp1viewc"
         android:layout_width="115dp"
         android:layout_height="30dp"
         android:background="#AD42ED13"
@@ -177,7 +177,7 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/mp2viewc"
         android:layout_width="115dp"
         android:layout_height="30dp"
         android:background="#AD42ED13"
@@ -193,7 +193,7 @@
         app:layout_constraintVertical_bias="0.399" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/mp3viewc"
         android:layout_width="115dp"
         android:layout_height="30dp"
         android:background="#AD42ED13"
@@ -209,7 +209,7 @@
         app:layout_constraintVertical_bias="0.865" />
 
     <Button
-        android:id="@+id/vc"
+        android:id="@+id/mp4viewc"
         android:layout_width="115dp"
         android:layout_height="30dp"
         android:background="#AD42ED13"
