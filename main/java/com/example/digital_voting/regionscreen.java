@@ -40,10 +40,10 @@ public class regionscreen extends AppCompatActivity {
                 }
                /* if(region_spinner.getSelectedItem().toString().equals("Nizamabad")){
                     openNizActivity();
-                }*/
+                }
                 if(region_spinner.getSelectedItem().toString().equals("Siddipet")){
                     openSidActivity();
-                }
+                }*/
                 if(region_spinner.getSelectedItem().toString().equals("Warangal")){
                     openWarActivity();
                 }
