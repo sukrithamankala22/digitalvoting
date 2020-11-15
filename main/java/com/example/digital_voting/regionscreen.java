@@ -38,9 +38,9 @@ public class regionscreen extends AppCompatActivity {
                 if(region_spinner.getSelectedItem().toString().equals("Mahabubnagar")){
                     openMehActivity();
                 }
-                if(region_spinner.getSelectedItem().toString().equals("Nizamabad")){
+               /* if(region_spinner.getSelectedItem().toString().equals("Nizamabad")){
                     openNizActivity();
-                }
+                }*/
                 if(region_spinner.getSelectedItem().toString().equals("Siddipet")){
                     openSidActivity();
                 }
@@ -63,10 +63,10 @@ public class regionscreen extends AppCompatActivity {
         Intent i=new Intent(this,MahabubnagarDB.class);
         startActivity(i);
     }
-    public void openNizActivity(){
+    /*public void openNizActivity(){
         Intent i=new Intent(this,NizamabadDB.class);
         startActivity(i);
-    }
+    }*/
     public void openSidActivity(){
         Intent i=new Intent(this,SiddipetDB.class);
         startActivity(i);

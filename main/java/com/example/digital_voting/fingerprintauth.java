@@ -28,13 +28,14 @@ public class fingerprintauth extends AppCompatActivity {
         signout_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 openMainActivity();
             }
         });
         BiometricManager biometricManager =BiometricManager.from(this);
         switch (biometricManager.canAuthenticate()){
             case BiometricManager.BIOMETRIC_SUCCESS:
-                Toast.makeText(getApplicationContext(),"Vote Casted!",Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"Error!",Toast.LENGTH_LONG).show();
                 break;
             case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
                 Toast.makeText(getApplicationContext(),"No fingerprint",Toast.LENGTH_SHORT).show();
@@ -52,6 +53,7 @@ public class fingerprintauth extends AppCompatActivity {
             public void onAuthenticationError(int errorCode, @NonNull CharSequence errString) {
                 super.onAuthenticationError(errorCode, errString);
                 Toast.makeText(getApplicationContext(),"Error!",Toast.LENGTH_SHORT).show();
+                finish();
 
 
             }
@@ -59,7 +61,7 @@ public class fingerprintauth extends AppCompatActivity {
             @Override
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                Toast.makeText(getApplicationContext(),"Fingerprint Authenticated",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Fingerprint Authenticated, vote casted!",Toast.LENGTH_SHORT).show();
             }
 
             @Override
